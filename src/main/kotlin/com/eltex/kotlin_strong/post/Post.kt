@@ -1,7 +1,5 @@
 package com.eltex.kotlin_strong.post
 
-import org.jetbrains.annotations.Nullable
-
 data class Post(
     val id: Int = 0,
     val authorId: Int = 0,
@@ -13,8 +11,8 @@ data class Post(
     val link: String = "",
     val mentionedMe: Boolean = false,
     val likeByMe: Boolean = false,
-    @Nullable val coordinates: Coordinates? = null,
-    @Nullable val attachment: Attachment? = null
+    val coordinates: Coordinates? = null,
+    val attachment: Attachment? = null
 ) {
     data class Builder(
         private var id: Int = 0,

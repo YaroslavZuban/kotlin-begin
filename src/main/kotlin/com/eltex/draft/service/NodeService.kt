@@ -17,6 +17,6 @@ class NodeService {
     }
 
     fun getNode(): Node {
-        return node ?: throw NullPointerException("Node is not initialized")
+        return checkNotNull(node) { "Node is not initialized" }
     }
 }

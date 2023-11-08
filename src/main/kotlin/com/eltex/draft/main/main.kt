@@ -1,11 +1,7 @@
 package com.eltex.draft.main
 
-import com.eltex.draft.service.NodeService
+import com.eltex.draft.service.NoteServiceImpl
 
 fun main() {
-    val nodeService: NodeService = NodeService()
 
-    nodeService.updateText("С возвращением")
-
-    println(nodeService.getNode())
 }
